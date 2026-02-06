@@ -1,8 +1,43 @@
 body {
   margin: 0;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 20% 30%, #3b98ca, transparent 40%),
+    radial-gradient(circle at 80% 20%, #cb2aab, transparent 40%),
+    radial-gradient(circle at 50% 80%, #131062, transparent 40%), #0f2027;
+
+  background-size:
+    200% 200%,
+    200% 200%,
+    200% 200%,
+    200% 200%,
+    auto;
+
+  animation: lavaMove 12s ease-in-out infinite;
+}
+
+@keyframes lavaMove {
+  0% {
+    background-position:
+      0% 0%,
+      100% 0%,
+      50% 100%;
+  }
+  50% {
+    background-position:
+      100% 100%,
+      0% 100%,
+      50% 0%;
+  }
+  100% {
+    background-position:
+      0% 0%,
+      100% 0%,
+      50% 100%;
+  }
 }
