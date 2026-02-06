@@ -12,6 +12,7 @@
   transition: transform 0.15s ease;
   overflow: hidden;
   animation: pulse 2.5s ease-in-out infinite;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .circle-btn:hover {
