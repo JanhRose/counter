@@ -11,7 +11,7 @@ function Contador() {
           <button className="circle-btn">
             <svg
               onClick={() => {
-                setContador((prev) => (prev >= 9999 ? 0 : contador + 1));
+                setContador((prev) => (prev >= 9999 ? 0 : prev + 1));
               }}
               className="progress-ring"
               width="140"
